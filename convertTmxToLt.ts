@@ -1,5 +1,5 @@
-import parseTmxXml from "./lib/parseTmxXml.ts";
-import type { Tilemap, TilemapLayer } from "./types/tilemap.ts";
+import parseTmxXml from "@/lib/parseTmxXml.ts";
+import type { Tilemap, TilemapLayer } from "@/types/tilemap.ts";
 
 export default function convertTmxToLt(tmxXml: string): Tilemap {
   const rawData = parseTmxXml(tmxXml);
