@@ -2,12 +2,8 @@ import parseTmxXml from "@/lib/parseTmxXml.ts";
 import tilesetToTerrain from "../lookup-tables/tileset-to-terrain.ts";
 import terrainIdToName from "@/lookup-tables/terrain-id-to-name.ts";
 
-export default async function tmxToTerrain(tmxXml: string) {
+export default function tmxToTerrain(tmxXml: string) {
   const rawData = parseTmxXml(tmxXml);
-
-  const tmxWidth = parseInt(rawData.map["@_width"], 10);
-  const tmxHeight = parseInt(rawData.map["@_height"], 10);
-
   const rawLayer = rawData.map.layer;
   const mapLayers = Array.isArray(rawLayer) ? rawLayer : [rawLayer];
 
@@ -15,7 +11,7 @@ export default async function tmxToTerrain(tmxXml: string) {
 
   const tilesetId = "30";
 
-  const layers = mapLayers.map((layer, index) => {
+  const layers = mapLayers.map((layer) => {
     const tiles = layer.data.tile;
     if (!tiles) return [];
     const terrainGrid: string[] = [];
