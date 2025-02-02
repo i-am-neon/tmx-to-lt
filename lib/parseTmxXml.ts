@@ -27,13 +27,19 @@ export type TmxMap = {
 };
 
 export default function parseTmxXml(tmxXml: string): TmxMap {
-  const parser = new XMLParser();
-  return parser.parse(tmxXml) as TmxMap;
+  const parser = new XMLParser({
+    ignoreAttributes: false,
+    attributeNamePrefix: "@_"
+  });
+  const parsed = parser.parse(tmxXml);
+  console.log("Debug: raw parse result:", JSON.stringify(parsed, null, 2));
+  return parsed as TmxMap;
 }
 
 if (import.meta.main) {
-  const exampleXml = new TextDecoder().decode(Deno.readFileSync("examples/field.tmx"));
-  console.log("exampleXml :>> ", exampleXml);
+  const exampleXml = new TextDecoder().decode(
+    Deno.readFileSync("examples/field.tmx")
+  );
   const parsed = parseTmxXml(exampleXml);
   console.log("Parsed tmxMap", parsed);
 }
