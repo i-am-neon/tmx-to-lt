@@ -1,6 +1,5 @@
+import parseTmxXml from "./lib/parseTmxXml.ts";
 import type { Tilemap, TilemapLayer } from "./types/tilemap.ts";
-import parseTmxXml, { TmxMap } from "./lib/parseTmxXml.ts";
-import mapTmxToTerrain from "./lib/mapTmxToTerrain.ts";
 
 export default function convertTmxToLt(tmxXml: string): Tilemap {
   const rawData = parseTmxXml(tmxXml);
@@ -28,16 +27,12 @@ export default function convertTmxToLt(tmxXml: string): Tilemap {
     (ts) => ts["@_name"] || ""
   );
 
-  const mapchipPath = "examples/tileset/fort.mapchip_config"; // Adjust as needed
-  const terrainMapping = mapTmxToTerrain(tmxXml, mapchipPath);
-
   const tilemap: Tilemap = {
     nid: "converted_map",
     size: [tmxWidth, tmxHeight],
     autotile_fps: 0,
     layers,
     tilesets: tilesetNames,
-    // terrainMapping,
   };
 
   return tilemap;
@@ -58,3 +53,4 @@ if (import.meta.main) {
   await Deno.writeTextFile(outputFile, JSON.stringify(result, null, 2));
   console.log(`Converted ${fileArg} -> ${outputFile}`);
 }
+
