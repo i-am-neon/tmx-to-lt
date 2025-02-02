@@ -69,7 +69,7 @@ export default function parseTmxXml(tmxXml: string): TmxMap {
     attributeNamePrefix: "@_",
   });
   const parsed = parser.parse(tmxXml);
-  console.log("Debug: raw parse result:", JSON.stringify(parsed, null, 2));
+  // console.log("Debug: raw parse result:", JSON.stringify(parsed, null, 2));
 
   const mapObj = parsed as TmxMap;
   if (!mapObj?.map) {
