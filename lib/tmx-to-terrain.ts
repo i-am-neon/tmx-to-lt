@@ -1,9 +1,10 @@
-import parseTmxXml from "@/lib/parseTmxXml.ts";
-import tilesetIdToTerrainId from "@/lookup-tables/tileset-id-to-terrain-id.ts";
 import terrainIdToName from "@/lookup-tables/terrain-id-to-name.ts";
+import tilesetIdToTerrainId from "@/lookup-tables/tileset-id-to-terrain-id.ts";
+import { TmxData } from "../types/tmx-data.ts";
+import parseTmxXml from "@/lib/parseTmxXml.ts";
 
-export default function tmxToTerrain(tmxXml: string) {
-  const { tilesetId, layers, firstGid } = parseTmxXml(tmxXml);
+export default function tmxToTerrain(parsedTmxData: TmxData): string[][] {
+  const { tilesetId, layers, firstGid } = parsedTmxData;
   const tid = tilesetId;
   const terrainTags = tilesetIdToTerrainId[tid];
   if (!terrainTags) {
@@ -24,7 +25,8 @@ if (import.meta.main) {
   const exampleXml = new TextDecoder().decode(
     Deno.readFileSync("examples/map/field.tmx")
   );
-  const result = tmxToTerrain(exampleXml);
+  const parsedTmxData = parseTmxXml(exampleXml);
+  const result = tmxToTerrain(parsedTmxData);
   console.log("result", JSON.stringify(result, null, 2));
 }
 

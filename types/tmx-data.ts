@@ -1,4 +1,4 @@
-export type ParsedTmxData = {
+export type TmxData = {
   tilesetId: string;
   tileset: string;
   layers: {
@@ -9,3 +9,4 @@ export type ParsedTmxData = {
   height: number;
   firstGid: number;
 };
+

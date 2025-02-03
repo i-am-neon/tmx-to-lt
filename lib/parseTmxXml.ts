@@ -1,7 +1,7 @@
 import { XMLParser } from "npm:fast-xml-parser";
 import { inflate } from "npm:pako";
 import { decode as decodeBase64 } from "https://deno.land/std@0.197.0/encoding/base64.ts";
-import { ParsedTmxData } from "@/types/parsed-tmx-data.ts";
+import { TmxData } from "../types/tmx-data.ts";
 
 /* Decodes <data> in a layer if it's base64+zlib or raw <tile gid="..."/> */
 function decodeLayerData(layerObj: TmxLayer) {
@@ -59,7 +59,7 @@ type TmxTilesetSingle = {
 };
 type TmxTileset = TmxTilesetSingle | TmxTilesetSingle[] | undefined;
 
-export default function parseTmxXml(tmxXml: string): ParsedTmxData {
+export default function parseTmxXml(tmxXml: string): TmxData {
   const parser = new XMLParser({
     ignoreAttributes: false,
     attributeNamePrefix: "@_",
