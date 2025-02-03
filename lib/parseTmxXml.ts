@@ -2,42 +2,13 @@ import { XMLParser } from "npm:fast-xml-parser";
 import { inflate } from "npm:pako";
 import { decode as decodeBase64 } from "https://deno.land/std@0.197.0/encoding/base64.ts";
 
-export type TmxLayer = {
-  "@_name": string;
-  "@_width": string;
-  "@_height": string;
-  "@_visible"?: string;
-  "@_encoding"?: string;
-  "@_compression"?: string;
-  data: {
-    tile?: Array<{ "@_gid": string }>;
-    "#text"?: string;
-    "@_encoding"?: string;
-    "@_compression"?: string;
-  };
-};
-
-export type TmxMap = {
-  map: {
-    "@_width": string;
-    "@_height": string;
-    "@_tilewidth": string;
-    "@_tileheight": string;
-    tileset?: Array<{
-      "@_name": string;
-      image: {
-        "@_source": string;
-      };
-    }>;
-    // layer can be a single layer object or an array of them.
-    layer: TmxLayer | TmxLayer[];
-  };
-};
-
+/* Decodes <data> in a layer if it's base64+zlib or raw <tile gid="..."/> */
 function decodeLayerData(layerObj: TmxLayer) {
   const data = layerObj.data;
-  // If Tiled wrote out direct <tile gid="..."/>, we already have them
-  if (data?.tile) return data.tile;
+  if (data?.tile) {
+    // Tiled wrote out direct <tile gid="..."/>, we already have them
+    return data.tile;
+  }
 
   const text = data?.["#text"];
   const encoding = data?.["@_encoding"] || layerObj?.["@_encoding"];
@@ -63,38 +34,115 @@ function decodeLayerData(layerObj: TmxLayer) {
   return [];
 }
 
-export default function parseTmxXml(tmxXml: string): TmxMap {
+export type ParsedTmxMapData = {
+  tilesetId: string;
+  layers: {
+    name: string;
+    gids: number[];
+  }[];
+  width: number;
+  height: number;
+  firstGid: number;
+};
+
+/* Minimal subset of what we need from TmxMap if we used a typed approach */
+export type TmxLayer = {
+  "@_name"?: string;
+  "@_width"?: string;
+  "@_height"?: string;
+  "@_visible"?: string;
+  "@_encoding"?: string;
+  "@_compression"?: string;
+  data: {
+    tile?: Array<{ "@_gid": string }>;
+    "#text"?: string;
+    "@_encoding"?: string;
+    "@_compression"?: string;
+  };
+};
+
+type TmxTilesetSingle = {
+  "@_firstgid"?: string;
+  image?: {
+    "@_source"?: string;
+  };
+};
+type TmxTileset = TmxTilesetSingle | TmxTilesetSingle[] | undefined;
+
+export default function parseTmxXml(tmxXml: string): ParsedTmxMapData {
   const parser = new XMLParser({
     ignoreAttributes: false,
     attributeNamePrefix: "@_",
   });
   const parsed = parser.parse(tmxXml);
-  // console.log("Debug: raw parse result:", JSON.stringify(parsed, null, 2));
 
-  const mapObj = parsed as TmxMap;
-  if (!mapObj?.map) {
-    return mapObj; // no map data at all
+  if (!parsed?.map) {
+    return {
+      tilesetId: "",
+      layers: [],
+      width: 0,
+      height: 0,
+      firstGid: 0,
+    };
   }
 
-  const layerData = mapObj.map.layer;
-  // If only one layer, it won't be an array
-  if (Array.isArray(layerData)) {
-    layerData.forEach((layer) => {
-      layer.data.tile = decodeLayerData(layer);
-    });
-  } else {
-    // single layer
-    layerData.data.tile = decodeLayerData(layerData);
+  const rawTileset: TmxTileset = parsed.map.tileset;
+
+  let firstGidStr = "1";
+  let imageSource = "";
+
+  if (Array.isArray(rawTileset) && rawTileset.length > 0) {
+    // rawTileset is an array of TmxTilesetSingle
+    const firstEntry = rawTileset[0];
+    firstGidStr = firstEntry["@_firstgid"] ?? "1";
+    imageSource = firstEntry.image?.["@_source"] ?? "";
+  } else if (rawTileset) {
+    // rawTileset is a single TmxTilesetSingle
+    const singleTs = rawTileset as TmxTilesetSingle;
+    firstGidStr = singleTs["@_firstgid"] ?? "1";
+    imageSource = singleTs.image?.["@_source"] ?? "";
   }
 
-  return mapObj;
+  let tilesetId = "";
+  const pngIndex = imageSource.toLowerCase().lastIndexOf(".png");
+  if (pngIndex >= 2) {
+    tilesetId = imageSource.substring(pngIndex - 2, pngIndex);
+  }
+
+  const width = parseInt(parsed.map["@_width"], 10);
+  const height = parseInt(parsed.map["@_height"], 10);
+  const firstGid = parseInt(firstGidStr, 10);
+
+  const rawLayer = parsed.map.layer;
+  const layerArray = Array.isArray(rawLayer) ? rawLayer : [rawLayer];
+  layerArray.forEach((layer) => {
+    layer.data.tile = decodeLayerData(layer);
+  });
+
+  const layers = layerArray.map((layer) => {
+    const name: string = layer["@_name"] || "";
+    const tileGids =
+      layer.data.tile?.map((t: { "@_gid": string }) =>
+        parseInt(t["@_gid"], 10)
+      ) || [];
+    return {
+      name,
+      gids: tileGids,
+    };
+  });
+
+  return {
+    tilesetId,
+    layers,
+    width,
+    height,
+    firstGid,
+  };
 }
 
 if (import.meta.main) {
-  const exampleXml = new TextDecoder().decode(
-    Deno.readFileSync("examples/castle.tmx")
-  );
-  const parsed = parseTmxXml(exampleXml);
-  console.log("parsed", JSON.stringify(parsed, null, 2));
+  const tmxXml = await Deno.readTextFile("examples/map/field.tmx");
+  const parsedResult = parseTmxXml(tmxXml);
+  console.log("Parsed Tmx:", parsedResult);
 }
 
