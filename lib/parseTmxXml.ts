@@ -1,6 +1,7 @@
 import { XMLParser } from "npm:fast-xml-parser";
 import { inflate } from "npm:pako";
 import { decode as decodeBase64 } from "https://deno.land/std@0.197.0/encoding/base64.ts";
+import { ParsedTmxData } from "@/types/parsed-tmx-data.ts";
 
 /* Decodes <data> in a layer if it's base64+zlib or raw <tile gid="..."/> */
 function decodeLayerData(layerObj: TmxLayer) {
@@ -34,17 +35,6 @@ function decodeLayerData(layerObj: TmxLayer) {
   return [];
 }
 
-export type ParsedTmxMapData = {
-  tilesetId: string;
-  layers: {
-    name: string;
-    gids: number[];
-  }[];
-  width: number;
-  height: number;
-  firstGid: number;
-};
-
 /* Minimal subset of what we need from TmxMap if we used a typed approach */
 export type TmxLayer = {
   "@_name"?: string;
@@ -69,7 +59,7 @@ type TmxTilesetSingle = {
 };
 type TmxTileset = TmxTilesetSingle | TmxTilesetSingle[] | undefined;
 
-export default function parseTmxXml(tmxXml: string): ParsedTmxMapData {
+export default function parseTmxXml(tmxXml: string): ParsedTmxData {
   const parser = new XMLParser({
     ignoreAttributes: false,
     attributeNamePrefix: "@_",
@@ -79,6 +69,7 @@ export default function parseTmxXml(tmxXml: string): ParsedTmxMapData {
   if (!parsed?.map) {
     return {
       tilesetId: "",
+      tileset: "",
       layers: [],
       width: 0,
       height: 0,
@@ -104,9 +95,13 @@ export default function parseTmxXml(tmxXml: string): ParsedTmxMapData {
   }
 
   let tilesetId = "";
+  let tileset = "";
   const pngIndex = imageSource.toLowerCase().lastIndexOf(".png");
   if (pngIndex >= 2) {
     tilesetId = imageSource.substring(pngIndex - 2, pngIndex);
+  }
+  if (pngIndex >= 8) {
+    tileset = imageSource.substring(pngIndex - 8, pngIndex);
   }
 
   const width = parseInt(parsed.map["@_width"], 10);
@@ -133,6 +128,7 @@ export default function parseTmxXml(tmxXml: string): ParsedTmxMapData {
 
   return {
     tilesetId,
+    tileset,
     layers,
     width,
     height,
