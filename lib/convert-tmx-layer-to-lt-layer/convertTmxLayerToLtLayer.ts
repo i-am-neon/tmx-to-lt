@@ -1,7 +1,7 @@
 import convertGidToTilesetCoords from "@/lib/convert-tmx-layer-to-lt-layer/convert-gids-to-tileset-coords.ts";
 import parseTmxXml from "@/lib/parseTmxXml.ts";
 import { Layer } from "@/types/tmx-data.ts";
-import { LtLayer } from "@/types/lt-layer.ts";
+import { LTTilemapLayer } from "@/types/tilemap.ts";
 
 export default function convertTmxLayerToLtLayer({
   layer,
@@ -13,7 +13,7 @@ export default function convertTmxLayerToLtLayer({
   tileset: string;
   mapWidth: number;
   firstGid: number;
-}): LtLayer {
+}): LTTilemapLayer {
   const sprite_grid = convertGidToTilesetCoords({
     gids: layer.gids,
     tileset,
@@ -22,8 +22,10 @@ export default function convertTmxLayerToLtLayer({
   });
   return {
     nid: layer.name,
+    visible: true,
+    foreground: false,
     sprite_grid,
-    terrain_grid: [],
+    terrain_grid: { "": "" },
   };
 }
 

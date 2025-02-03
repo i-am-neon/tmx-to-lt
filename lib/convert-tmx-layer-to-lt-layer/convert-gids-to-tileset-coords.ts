@@ -1,4 +1,4 @@
-import { TileSprite } from "@/types/tile-sprite.ts";
+import { TileSprite } from "@/types/tilemap.ts";
 
 export default function convertGidToTilesetCoords({
   gids,
