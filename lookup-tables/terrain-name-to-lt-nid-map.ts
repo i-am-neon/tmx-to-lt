@@ -15,6 +15,7 @@ const terrainNameToLTNidMap: Map<string, string> = new Map([
   ["River", "12"],
   ["Hill", "20"],
   ["Mountain", "21"],
+  ["Peak", "21"],
   ["Cliff", "22"],
   ["Barrel", "25"],
   ["House", "30"],

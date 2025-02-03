@@ -3,6 +3,7 @@ import parseTmxXml from "@/lib/parseTmxXml.ts";
 import { Layer } from "@/types/tmx-data.ts";
 import { LTTilemapLayer } from "@/types/tilemap.ts";
 import getLayerTerrainGrid from "@/lib/convert-tmx-layer-to-lt-layer/get-layer-terrain-grid.ts";
+import sanitizeNid from "@/lib/sanitize-nid.ts";
 
 export default function convertTmxLayerToLtLayer({
   layer,
@@ -30,7 +31,7 @@ export default function convertTmxLayerToLtLayer({
     mapWidth,
   });
   return {
-    nid: layer.name,
+    nid: sanitizeNid(layer.name),
     visible: true,
     foreground: false,
     sprite_grid: spriteGrid,

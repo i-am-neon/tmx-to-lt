@@ -6,6 +6,9 @@ export default function convertTmxToLT(tmxFilePath: string): Tilemap {
   const tmxXml = Deno.readTextFileSync(tmxFilePath);
   const tmxData = parseTmxXml(tmxXml);
 
+  // LT expects the first layer to be called "base"
+  tmxData.layers[0].name = "base";
+
   const layers = tmxData.layers.map((layer) =>
     convertTmxLayerToLtLayer({
       firstGid: tmxData.firstGid,
