@@ -5,7 +5,9 @@
     "jsr:@std/internal@^1.0.5": "1.0.5",
     "npm:fast-xml-parser@*": "4.5.1",
     "npm:fast-xml-parser@^4.5.1": "4.5.1",
-    "npm:pako@*": "2.1.0"
+    "npm:pako@*": "2.1.0",
+    "npm:pathe@*": "2.0.2",
+    "npm:pathe@^2.0.2": "2.0.2"
   },
   "jsr": {
     "@std/assert@1.0.11": {
@@ -28,6 +30,9 @@
     "pako@2.1.0": {
       "integrity": "sha512-w+eufiZ1WuJYgPXbV/PO3NCMEc3xqylkKHzp8bxp1uW4qaSNQUkwmLLEc3kKsfz8lpV1F8Ht3U1Cm+9Srog2ug=="
     },
+    "pathe@2.0.2": {
+      "integrity": "sha512-15Ztpk+nov8DR524R4BF7uEuzESgzUEAV4Ah7CUMNGXdE5ELuvxElxGXndBl32vMSsWa1jpNf22Z+Er3sKwq+w=="
+    },
     "strnum@1.0.5": {
       "integrity": "sha512-J8bbNyKKXl5qYcR36TIO8W3mVGVHrmmxsd5PAItGkmyzwJvybiw2IVq5nqd0i4LSNSkB/sx9VHllbfFdr9k1JA=="
     }
@@ -38,7 +43,8 @@
   "workspace": {
     "dependencies": [
       "jsr:@std/assert@1",
-      "npm:fast-xml-parser@^4.5.1"
+      "npm:fast-xml-parser@^4.5.1",
+      "npm:pathe@^2.0.2"
     ]
   }
 }
