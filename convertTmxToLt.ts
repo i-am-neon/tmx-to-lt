@@ -1,4 +1,4 @@
-import getLayersWithTerrainNames from "./lib/get-layers-with-terrain-names.ts";
+import getLayersWithTerrainNames from "./lib/convert-tmx-layer-to-lt-layer/get-layers-with-terrain-names.ts";
 import parseTmxXml from "@/lib/parseTmxXml.ts";
 
 export default async function convertTmxToLT(tmxFilePath: string) {
