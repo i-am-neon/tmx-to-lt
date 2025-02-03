@@ -12,15 +12,8 @@ export default function tmxToTerrain(tmxXml: string) {
   const terrainTagsArray = terrainTags.split(" ");
   const result = layers.map((layer) => {
     return layer.gids.map((gid) => {
-      console.log("gid :>> ", gid);
       const terrainIdIndex = parseInt(terrainTagsArray[gid - firstGid], 10);
-      console.log("terrainIdIndex :>> ", terrainIdIndex);
       const terrainId = terrainIdIndex;
-      console.log("terrainId :>> ", terrainId);
-      console.log(
-        "terrainIdToName[terrainId] :>> ",
-        terrainIdToName[terrainId]
-      );
       return terrainIdToName[terrainId] || "--";
     });
   });
