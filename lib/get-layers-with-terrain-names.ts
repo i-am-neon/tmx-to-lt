@@ -1,14 +1,20 @@
+import parseTmxXml from "@/lib/parseTmxXml.ts";
 import terrainIdToName from "@/lookup-tables/terrain-id-to-name.ts";
 import tilesetIdToTerrainId from "@/lookup-tables/tileset-id-to-terrain-id.ts";
-import { TmxData } from "../types/tmx-data.ts";
-import parseTmxXml from "@/lib/parseTmxXml.ts";
+import { Layer } from "@/types/tmx-data.ts";
 
-export default function tmxToTerrain(parsedTmxData: TmxData): string[][] {
-  const { tilesetId, layers, firstGid } = parsedTmxData;
-  const tid = tilesetId;
-  const terrainTags = tilesetIdToTerrainId[tid];
+export default function getLayersWithTerrainNames({
+  tilesetId,
+  layers,
+  firstGid,
+}: {
+  tilesetId: string;
+  layers: Layer[];
+  firstGid: number;
+}): string[][] {
+  const terrainTags = tilesetIdToTerrainId[tilesetId];
   if (!terrainTags) {
-    throw new Error("Invalid tile config id: " + tid);
+    throw new Error("Invalid tile config id: " + tilesetId);
   }
   const terrainTagsArray = terrainTags.split(" ");
   const result = layers.map((layer) => {
@@ -26,7 +32,15 @@ if (import.meta.main) {
     Deno.readFileSync("examples/map/field.tmx")
   );
   const parsedTmxData = parseTmxXml(exampleXml);
-  const result = tmxToTerrain(parsedTmxData);
+  const result = getLayersWithTerrainNames(parsedTmxData);
   console.log("result", JSON.stringify(result, null, 2));
 }
 
+// Returns:
+// [
+//   [
+//     "Wall",
+//     "Plains",
+//     "Wall",
+//     "Wall",
+//     "Wall", ...

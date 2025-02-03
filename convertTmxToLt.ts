@@ -1,10 +1,10 @@
-import tmxToTerrain from "@/lib/tmx-to-terrain.ts";
+import getLayersWithTerrainNames from "./lib/get-layers-with-terrain-names.ts";
 import parseTmxXml from "@/lib/parseTmxXml.ts";
 
 export default async function convertTmxToLT(tmxFilePath: string) {
   const tmxXml = await Deno.readTextFile(tmxFilePath);
   const tmxData = parseTmxXml(tmxXml);
-  const layersWithTerrainName = tmxToTerrain(tmxData);
+  const layersWithTerrainName = getLayersWithTerrainNames(tmxData);
   console.log("layersWithTerrainName :>> ", layersWithTerrainName);
   // logs:
   // layersWithTerrainName :>>  [
