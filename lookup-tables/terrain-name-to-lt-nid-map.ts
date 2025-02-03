@@ -1,5 +1,5 @@
 const terrainNameToLTNidMap: Map<string, string> = new Map([
-  ["Plain", "1"],
+  ["Plains", "1"],
   ["--", "0"],
   ["Forest", "2"],
   ["Thicket", "3"],
@@ -36,3 +36,4 @@ export default function getTerrainLTNid(
 ): string | undefined {
   return terrainNameToLTNidMap.get(terrainName);
 }
+

@@ -1,6 +1,6 @@
 import { TileSprite } from "@/types/tilemap.ts";
 
-export default function convertGidToTilesetCoords({
+export default function getLayerSpriteGrid({
   gids,
   tileset,
   mapWidth,
