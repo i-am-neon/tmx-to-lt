@@ -1,6 +1,6 @@
 {
   "tasks": {
-    "convert": "deno run --allow-all main.ts",
+    "convert": "deno run --allow-all convert-all.ts",
     "clean": "deno run --allow-all clean.ts"
   },
   "imports": {
