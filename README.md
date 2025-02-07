@@ -51,7 +51,26 @@ This means the following maps will not convert:
 
 ## Adding These maps to your LT game
 
-Move the generated `.json` and corresponding image file from the `/output/` directory to your LT game's `/maps/` directory.
+I'm not sure how to add these maps to your LT game through the LT Maker GUI, but I can tell you how to do it manually in the code.
+
+1. Install the [LT Maker Python Installation](https://lt-maker.readthedocs.io/en/latest/source/getting_started/Python-Installation.html#pyinstall).
+
+2. Copy the contents of the `/tilesets/images` directory to your LT game's tileset directory: `lt-maker/<your-project-name>.ltproj/resources/tilesets/`.
+
+3. Add the items from the `tilesets/tileset.txt` file to your LT game's tileset file: `lt-maker/<your-project-name>.ltproj/resources/tilesets/tileset.json`.
+  a. This file is a JSON array of tileset objects. In your LT game's tileset file, you'll need to add a comma to the last curly brace "`},`" and then paste the contents of the `tilesets/tileset.txt` file after it, **but before the last closing bracket "`]`"**.
+
+4. For each map, add an object to the end of the list, making sure to add a comma after the previous closing curly brace "`},`" and before the new object. The object should look like this, with the `nid` property set to the chapter number and the `terrain_grid` and `autotiles` properties set to empty objects:
+
+```json
+{
+  "nid": "0",
+  "terrain_grid": {},
+  "autotiles": {}
+}
+```
+
+5. Move the generated `.json` from the `/output/` directory to your LT game's tilemaps directory. You'll need to change the `nid` property to the chapter number (`"0"` for the prologue, `"1"` for chapter 1, etc.).
 
 ## Developer Setup
 
