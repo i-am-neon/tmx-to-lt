@@ -1,7 +1,3 @@
-/* generate-map-previews.ts
-   Run with: deno run --allow-read --allow-write generate-map-previews.ts
-*/
-
 interface MapInfo {
   mapName: string;
   jsonFile: string;
