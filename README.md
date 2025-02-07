@@ -42,5 +42,9 @@ This means the following maps will not convert:
 - "Chapter8Reunion Jail Route" by Shin19
 - "Chapter20BTheSilverWolf Diff Tileset" by Shin19
 - "Chapter9" by Shin19
-- "Chapter14Arcadia Slight Rework Item Markings" by Shin19
-- "The Cistern Waterless {LordGlenn}" by LordGlenn
+- "Chapter14Arcadia_Slight_Rework_Item_Markings" by Shin19
+- "The_Cistern_Waterless_{LordGlenn}" by LordGlenn
+
+## Map Previews
+
+You can browse the newly generated map previews here: [Map Previews](maps-preview.md).
