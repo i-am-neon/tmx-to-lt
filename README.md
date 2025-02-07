@@ -2,9 +2,13 @@
 
 This is a program that converts `.tmx` map files to `.json` usable in the [Lex Talionis](https://gitlab.com/rainlash/lt-maker) game engine for Fire Emblem ROM hacks.
 
+## Map Previews
+
+You can browse the newly generated map previews here:[Map Previews](maps-preview.md).
+
 ## Limitations
 
-While this program converts most of the maps in the [shared FE Repo](https://github.com/Klokinator/FE-Repo), it does not work with all tilesets, nor any autotiles
+While this program converts most of the maps in the [shared FE Repo](https://github.com/Klokinator/FE-Repo), it does not work with all tilesets, nor any autotiles.
 
 ### Autotiles
 
@@ -45,6 +49,6 @@ This means the following maps will not convert:
 - "Chapter14Arcadia_Slight_Rework_Item_Markings" by Shin19
 - "The_Cistern_Waterless_{LordGlenn}" by LordGlenn
 
-## Map Previews
+## Developer Setup
 
-You can browse the newly generated map previews here: [Map Previews](maps-preview.md).
+For detailed setup and usage instructions, see [developer-setup.md](developer-setup.md).
