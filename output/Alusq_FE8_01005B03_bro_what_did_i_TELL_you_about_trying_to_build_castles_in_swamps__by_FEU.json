@@ -1,0 +1,48 @@
+{
+  "nid": "Alusq_FE8_01005B03_bro_what_did_i_TELL_you_about_trying_to_build_castles_in_swamps__by_FEU",
+  "size": [
+    18,
+    12
+  ],
+  "autotile_fps": 29,
+  "layers": [
+    {
+      "nid": "base",
+      "visible": true,
+      "foreground": false,
+      "sprite_grid": {},
+      "terrain_grid": {}
+    },
+    {
+      "nid": "Snag3",
+      "visible": true,
+      "foreground": false,
+      "sprite_grid": {},
+      "terrain_grid": {}
+    },
+    {
+      "nid": "Snag2",
+      "visible": true,
+      "foreground": false,
+      "sprite_grid": {},
+      "terrain_grid": {}
+    },
+    {
+      "nid": "Snag1",
+      "visible": true,
+      "foreground": false,
+      "sprite_grid": {},
+      "terrain_grid": {}
+    },
+    {
+      "nid": "Snag0",
+      "visible": true,
+      "foreground": false,
+      "sprite_grid": {},
+      "terrain_grid": {}
+    }
+  ],
+  "tilesets": [
+    "01005B03"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "nid": "Alusq_FE8_01004C03_well_gang_looks_like_we_re_too_late__by_FEU",
+  "size": [
+    15,
+    13
+  ],
+  "autotile_fps": 29,
+  "layers": [
+    {
+      "nid": "base",
+      "visible": true,
+      "foreground": false,
+      "sprite_grid": {},
+      "terrain_grid": {}
+    }
+  ],
+  "tilesets": [
+    "01004C03"
+  ]
+}

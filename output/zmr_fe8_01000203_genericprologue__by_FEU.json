@@ -1,0 +1,34 @@
+{
+  "nid": "zmr_fe8_01000203_genericprologue__by_FEU",
+  "size": [
+    15,
+    10
+  ],
+  "autotile_fps": 29,
+  "layers": [
+    {
+      "nid": "base",
+      "visible": true,
+      "foreground": false,
+      "sprite_grid": {},
+      "terrain_grid": {}
+    },
+    {
+      "nid": "VillageSaved",
+      "visible": true,
+      "foreground": false,
+      "sprite_grid": {},
+      "terrain_grid": {}
+    },
+    {
+      "nid": "VillageDestroyed",
+      "visible": true,
+      "foreground": false,
+      "sprite_grid": {},
+      "terrain_grid": {}
+    }
+  ],
+  "tilesets": [
+    "01000203"
+  ]
+}

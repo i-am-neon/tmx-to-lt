@@ -1,0 +1,20 @@
+{
+  "nid": "Alusq_FE8_01000203_castle_of_duty-_maison_warfare__by_FEU",
+  "size": [
+    15,
+    18
+  ],
+  "autotile_fps": 29,
+  "layers": [
+    {
+      "nid": "base",
+      "visible": true,
+      "foreground": false,
+      "sprite_grid": {},
+      "terrain_grid": {}
+    }
+  ],
+  "tilesets": [
+    "01000203"
+  ]
+}

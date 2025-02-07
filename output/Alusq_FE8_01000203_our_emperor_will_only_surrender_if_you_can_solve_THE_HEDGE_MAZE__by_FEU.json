@@ -1,0 +1,132 @@
+{
+  "nid": "Alusq_FE8_01000203_our_emperor_will_only_surrender_if_you_can_solve_THE_HEDGE_MAZE__by_FEU",
+  "size": [
+    25,
+    10
+  ],
+  "autotile_fps": 29,
+  "layers": [
+    {
+      "nid": "base",
+      "visible": true,
+      "foreground": false,
+      "sprite_grid": {},
+      "terrain_grid": {}
+    },
+    {
+      "nid": "TheShopWasDestroyedLOL15",
+      "visible": true,
+      "foreground": false,
+      "sprite_grid": {},
+      "terrain_grid": {}
+    },
+    {
+      "nid": "Wall14",
+      "visible": true,
+      "foreground": false,
+      "sprite_grid": {},
+      "terrain_grid": {}
+    },
+    {
+      "nid": "Wall13",
+      "visible": true,
+      "foreground": false,
+      "sprite_grid": {},
+      "terrain_grid": {}
+    },
+    {
+      "nid": "Wall12",
+      "visible": true,
+      "foreground": false,
+      "sprite_grid": {},
+      "terrain_grid": {}
+    },
+    {
+      "nid": "Wall11",
+      "visible": true,
+      "foreground": false,
+      "sprite_grid": {},
+      "terrain_grid": {}
+    },
+    {
+      "nid": "Wall10",
+      "visible": true,
+      "foreground": false,
+      "sprite_grid": {},
+      "terrain_grid": {}
+    },
+    {
+      "nid": "Wall9",
+      "visible": true,
+      "foreground": false,
+      "sprite_grid": {},
+      "terrain_grid": {}
+    },
+    {
+      "nid": "Wall8",
+      "visible": true,
+      "foreground": false,
+      "sprite_grid": {},
+      "terrain_grid": {}
+    },
+    {
+      "nid": "Wall7",
+      "visible": true,
+      "foreground": false,
+      "sprite_grid": {},
+      "terrain_grid": {}
+    },
+    {
+      "nid": "Wall6",
+      "visible": true,
+      "foreground": false,
+      "sprite_grid": {},
+      "terrain_grid": {}
+    },
+    {
+      "nid": "Wall5",
+      "visible": true,
+      "foreground": false,
+      "sprite_grid": {},
+      "terrain_grid": {}
+    },
+    {
+      "nid": "Wall4",
+      "visible": true,
+      "foreground": false,
+      "sprite_grid": {},
+      "terrain_grid": {}
+    },
+    {
+      "nid": "Wall3",
+      "visible": true,
+      "foreground": false,
+      "sprite_grid": {},
+      "terrain_grid": {}
+    },
+    {
+      "nid": "Wall2",
+      "visible": true,
+      "foreground": false,
+      "sprite_grid": {},
+      "terrain_grid": {}
+    },
+    {
+      "nid": "Wall1",
+      "visible": true,
+      "foreground": false,
+      "sprite_grid": {},
+      "terrain_grid": {}
+    },
+    {
+      "nid": "Wall0",
+      "visible": true,
+      "foreground": false,
+      "sprite_grid": {},
+      "terrain_grid": {}
+    }
+  ],
+  "tilesets": [
+    "01000203"
+  ]
+}

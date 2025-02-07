@@ -1,0 +1,34 @@
+{
+  "nid": "Alusq_FE8_01003803_lush_woods__by_FEU",
+  "size": [
+    16,
+    16
+  ],
+  "autotile_fps": 29,
+  "layers": [
+    {
+      "nid": "base",
+      "visible": true,
+      "foreground": false,
+      "sprite_grid": {},
+      "terrain_grid": {}
+    },
+    {
+      "nid": "1Snag2",
+      "visible": true,
+      "foreground": false,
+      "sprite_grid": {},
+      "terrain_grid": {}
+    },
+    {
+      "nid": "0Snag1",
+      "visible": true,
+      "foreground": false,
+      "sprite_grid": {},
+      "terrain_grid": {}
+    }
+  ],
+  "tilesets": [
+    "01003803"
+  ]
+}

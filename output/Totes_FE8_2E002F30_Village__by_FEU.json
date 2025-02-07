@@ -1,0 +1,20 @@
+{
+  "nid": "Totes_FE8_2E002F30_Village__by_FEU",
+  "size": [
+    29,
+    30
+  ],
+  "autotile_fps": 29,
+  "layers": [
+    {
+      "nid": "base",
+      "visible": true,
+      "foreground": false,
+      "sprite_grid": {},
+      "terrain_grid": {}
+    }
+  ],
+  "tilesets": [
+    "2E002F30"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "nid": "zmr_fe8_0e000f10_coasttown__by_FEU",
+  "size": [
+    18,
+    17
+  ],
+  "autotile_fps": 29,
+  "layers": [
+    {
+      "nid": "base",
+      "visible": true,
+      "foreground": false,
+      "sprite_grid": {},
+      "terrain_grid": {}
+    },
+    {
+      "nid": "VillageSaved",
+      "visible": true,
+      "foreground": false,
+      "sprite_grid": {},
+      "terrain_grid": {}
+    },
+    {
+      "nid": "VillageDestroyed",
+      "visible": true,
+      "foreground": false,
+      "sprite_grid": {},
+      "terrain_grid": {}
+    }
+  ],
+  "tilesets": [
+    "0E000F10"
+  ]
+}
