@@ -25,7 +25,16 @@ export default function getLayerTerrainGrid({
     const terrainNid = getTerrainLTNid(name) ?? "--";
     const x = i % mapWidth;
     const y = Math.floor(i / mapWidth);
-    terrainGrid[`${x},${y}`] = terrainNid;
+    if (terrainNid === "0") {
+      // 0 is the default terrain, so we don't need to store it
+      continue;
+    }
+    if (terrainNid === "--") {
+      // LT maps "--" to "0"
+      terrainGrid[`${x},${y}`] = "0";
+    } else {
+      terrainGrid[`${x},${y}`] = terrainNid;
+    }
   }
 
   return terrainGrid;

@@ -98,10 +98,10 @@ export default function parseTmxXml(tmxXml: string): TmxData {
   let tileset = "";
   const pngIndex = imageSource.toLowerCase().lastIndexOf(".png");
   if (pngIndex >= 2) {
-    tilesetId = imageSource.substring(pngIndex - 2, pngIndex);
+    tilesetId = imageSource.substring(pngIndex - 2, pngIndex).toUpperCase();
   }
   if (pngIndex >= 8) {
-    tileset = imageSource.substring(pngIndex - 8, pngIndex);
+    tileset = imageSource.substring(pngIndex - 8, pngIndex).toUpperCase();
   }
 
   const width = parseInt(parsed.map["@_width"], 10);
