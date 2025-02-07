@@ -1,6 +1,6 @@
 {
   "tasks": {
-    "convert": "deno run --allow-all convert-all.ts",
+    "process-all-maps": "deno run --allow-all process-all-maps.ts",
     "clean": "deno run --allow-all clean.ts"
   },
   "imports": {
@@ -12,3 +12,4 @@
     "yaml": "npm:yaml@^2.7.0"
   }
 }
+

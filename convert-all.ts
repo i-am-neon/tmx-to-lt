@@ -1,7 +1,7 @@
 import { basename } from "npm:pathe";
-import convertTmxToLt from "./convert-tmx-to-lt.ts";
+import convertTmxToLt from "@/convert-tmx-to-lt.ts";
 
-async function runConversion() {
+export default async function runConversion() {
   const tmxFiles: string[] = [];
   for await (const entry of Deno.readDir("./input")) {
     if (entry.isFile && entry.name.endsWith(".tmx")) {

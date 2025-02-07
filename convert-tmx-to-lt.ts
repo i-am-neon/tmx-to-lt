@@ -1,10 +1,18 @@
 import convertTmxLayerToLtLayer from "@/lib/convert-tmx-layer-to-lt-layer/convert-tmx-layer-to-lt-layer.ts";
 import parseTmxXml from "@/lib/parseTmxXml.ts";
 import { Tilemap } from "@/types/tilemap.ts";
+import tilesetIdToTerrainId from "@/lookup-tables/tileset-id-to-terrain-id.ts";
 
-export default function convertTmxToLT(tmxFilePath: string): Tilemap {
+export default function convertTmxToLT(tmxFilePath: string): Tilemap | null {
   const tmxXml = Deno.readTextFileSync(tmxFilePath);
   const tmxData = parseTmxXml(tmxXml);
+  const mapName = tmxFilePath.split("/").pop()?.split(".")[0] || "Map Name";
+  if (tilesetIdToTerrainId[tmxData.tilesetId] === undefined) {
+    console.warn(
+      `Invalid tile config id: ${tmxData.tilesetId} from ${tmxData.tileset} in map ${mapName} . Skipping.`
+    );
+    return null;
+  }
 
   // LT expects the first layer to be called "base"
   tmxData.layers[0].name = "base";
@@ -20,7 +28,7 @@ export default function convertTmxToLT(tmxFilePath: string): Tilemap {
   );
 
   return {
-    nid: "Map Name",
+    nid: mapName,
     size: [tmxData.width, tmxData.height],
     autotile_fps: 29,
     layers,
