@@ -27,6 +27,15 @@ export default function convertTmxToLT(tmxFilePath: string): Tilemap | null {
     })
   );
 
+  const baseLayer = layers.find((layer) => layer.nid === "base");
+  const isError =
+    !baseLayer?.terrain_grid ||
+    Object.keys(baseLayer.terrain_grid).length === 0;
+  if (isError) {
+    console.warn(`Base layer in map ${mapName} has no terrain. Skipping.`);
+    return null;
+  }
+
   return {
     nid: mapName,
     size: [tmxData.width, tmxData.height],

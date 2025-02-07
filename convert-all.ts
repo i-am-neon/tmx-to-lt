@@ -12,11 +12,16 @@ export default async function runConversion() {
   for (const relativePath of tmxFiles) {
     const inputPath = `./input/${relativePath}`;
     const tilemap = convertTmxToLt(inputPath);
+    if (!tilemap) {
+      console.warn(`Failed to convert ${inputPath}. Skipping...`);
+      continue;
+    }
     const outName = basename(relativePath, ".tmx") + ".json";
     await Deno.writeTextFile(
       `./output/${outName}`,
       JSON.stringify(tilemap, null, 2)
     );
+    console.log(`Converted ${inputPath} -> ./output/${outName}`);
     const imageName = basename(relativePath, ".tmx") + ".png";
     const imageInputPath = `./input/images/${imageName}`;
     const imageOutputDir = `./output/images`;
@@ -36,3 +41,4 @@ export default async function runConversion() {
 if (import.meta.main) {
   runConversion();
 }
+
