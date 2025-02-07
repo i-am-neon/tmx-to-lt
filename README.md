@@ -4,9 +4,9 @@ This is a program that converts `.tmx` map files to `.json` usable in the [Lex T
 
 ## Map Previews
 
-You can browse the newly generated map previews here:[Map Previews](maps-preview.md).
+You can browse the newly generated map previews here: [Map Previews](maps-preview.md).
 
-## Adding These maps to your LT game
+## Adding These maps to Your LT game
 
 I'm not sure how to add these maps to your LT game through the LT Maker GUI, but I can tell you how to do it manually in the code.
 
