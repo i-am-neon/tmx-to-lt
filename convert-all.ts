@@ -17,10 +17,22 @@ export default async function runConversion() {
       `./output/${outName}`,
       JSON.stringify(tilemap, null, 2)
     );
+    const imageName = basename(relativePath, ".tmx") + ".png";
+    const imageInputPath = `./input/images/${imageName}`;
+    const imageOutputDir = `./output/images`;
+    const imageOutputPath = `${imageOutputDir}/${imageName}`;
+
+    try {
+      await Deno.stat(imageInputPath);
+      await Deno.mkdir(imageOutputDir, { recursive: true });
+      await Deno.copyFile(imageInputPath, imageOutputPath);
+      console.log(`Copied image -> ${imageOutputPath}`);
+    } catch (err) {
+      // no image
+    }
   }
 }
 
 if (import.meta.main) {
   runConversion();
 }
-

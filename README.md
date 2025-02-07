@@ -8,11 +8,11 @@ While this program converts most of the maps in the [shared FE Repo](https://git
 
 ### Autotiles
 
-Autotiles are tiles that are animated in the game. They are not supported by this program. The maps look just fine without them.
+Autotiles are tiles that are animated in the game (rivers, etc.). **Autotiles are not supported by this program**. However, the maps look just fine without them.
 
 ### Unsupported Tilesets
 
-Some tilesets are unsupported. This program only supports tilesets whose last two characters are:
+This program only supports tilesets whose last two characters are:
 
 - Village: "10"
 - Plains: "30"
