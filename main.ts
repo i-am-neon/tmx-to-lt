@@ -1,5 +1,5 @@
 import { basename } from "npm:pathe";
-import convertTmxToLt from "@/convertTmxToLt.ts";
+import convertTmxToLt from "./convert-tmx-to-lt.ts";
 
 async function runConversion() {
   const tmxFiles: string[] = [];
@@ -23,3 +23,4 @@ async function runConversion() {
 if (import.meta.main) {
   runConversion();
 }
+
