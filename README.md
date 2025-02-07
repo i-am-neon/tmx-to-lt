@@ -12,7 +12,21 @@ Autotiles are tiles that are animated in the game. They are not supported by thi
 
 ### Unsupported Tilesets
 
-Some tilesets are unsupported. This means the following maps will not convert:
+Some tilesets are unsupported. This program only supports tilesets whose last two characters are:
+
+- Village: "10"
+- Plains: "30"
+- Fort: "3E"
+- Black Temple: "61"
+- Mountainous: "6E"
+- Fields: "03"
+- Castle: "1A"
+- Stronghold: "7B"
+- Temple: "8A"
+- Desert: "44"
+- Lava Cave: "52"
+
+This means the following maps will not convert:
 
 - "Alusq FE7 1C1D481F trine peninsula" by FEU
 - "Alusq FE7 0A009B0C dark room- cutscene map" by FEU
