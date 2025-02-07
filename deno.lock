@@ -5,9 +5,13 @@
     "jsr:@std/internal@^1.0.5": "1.0.5",
     "npm:fast-xml-parser@*": "4.5.1",
     "npm:fast-xml-parser@^4.5.1": "4.5.1",
+    "npm:js-yaml@*": "4.1.0",
+    "npm:js-yaml@^4.1.0": "4.1.0",
     "npm:pako@*": "2.1.0",
     "npm:pathe@*": "2.0.2",
-    "npm:pathe@^2.0.2": "2.0.2"
+    "npm:pathe@^2.0.2": "2.0.2",
+    "npm:yaml@*": "2.7.0",
+    "npm:yaml@^2.7.0": "2.7.0"
   },
   "jsr": {
     "@std/assert@1.0.11": {
@@ -21,10 +25,19 @@
     }
   },
   "npm": {
+    "argparse@2.0.1": {
+      "integrity": "sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q=="
+    },
     "fast-xml-parser@4.5.1": {
       "integrity": "sha512-y655CeyUQ+jj7KBbYMc4FG01V8ZQqjN+gDYGJ50RtfsUB8iG9AmwmwoAgeKLJdmueKKMrH1RJ7yXHTSoczdv5w==",
       "dependencies": [
         "strnum"
+      ]
+    },
+    "js-yaml@4.1.0": {
+      "integrity": "sha512-wpxZs9NoxZaJESJGIZTyDEaYpl0FKSA+FB9aJiyemKhMwkxQg63h4T1KJgUGHpTqPDNRcmmYLugrRjJlBtWvRA==",
+      "dependencies": [
+        "argparse"
       ]
     },
     "pako@2.1.0": {
@@ -35,6 +48,9 @@
     },
     "strnum@1.0.5": {
       "integrity": "sha512-J8bbNyKKXl5qYcR36TIO8W3mVGVHrmmxsd5PAItGkmyzwJvybiw2IVq5nqd0i4LSNSkB/sx9VHllbfFdr9k1JA=="
+    },
+    "yaml@2.7.0": {
+      "integrity": "sha512-+hSoy/QHluxmC9kCIJyL/uyFmLmc+e5CFR5Wa+bpIhIj85LVb9ZH2nVnqrHoSvKogwODv0ClqZkmiSSaIH5LTA=="
     }
   },
   "remote": {
@@ -44,7 +60,9 @@
     "dependencies": [
       "jsr:@std/assert@1",
       "npm:fast-xml-parser@^4.5.1",
-      "npm:pathe@^2.0.2"
+      "npm:js-yaml@^4.1.0",
+      "npm:pathe@^2.0.2",
+      "npm:yaml@^2.7.0"
     ]
   }
 }

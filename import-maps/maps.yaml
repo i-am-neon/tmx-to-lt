@@ -1,0 +1,586 @@
+- name: (7)ch01_diff_tileset
+  author: Shin19
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Elibe%20Map%20Alt%20Pack%20%7BShin19%7D%20(16)/(7)Ch01%20Diff%20Tileset.tmx
+  imageUrl: ''
+- name: (7)ch29x31xbattlepreparations_arenatime
+  author: Shin19
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Elibe%20Map%20Alt%20Pack%20%7BShin19%7D%20(16)/(7)Ch29x31xBattlePreparations%20ArenaTime.tmx
+  imageUrl: ''
+- name: (7)ch3bandofmercenaries_diff_tileset
+  author: Shin19
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Elibe%20Map%20Alt%20Pack%20%7BShin19%7D%20(16)/(7)Ch3BandofMercenaries%20Diff%20Tileset.tmx
+  imageUrl: ''
+- name: chapter11aheroofthewest_diff_tileset
+  author: Shin19
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Elibe%20Map%20Alt%20Pack%20%7BShin19%7D%20(16)/Chapter11AHerooftheWest%20Diff%20Tileset.tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Elibe%20Map%20Alt%20Pack%20%7BShin19%7D%20(16)/Chapter11AHerooftheWest%20Diff%20Tileset.png
+- name: chapter12thetrueenemy_fire_tileset_minor_changes
+  author: Shin19
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Elibe%20Map%20Alt%20Pack%20%7BShin19%7D%20(16)/Chapter12TheTrueEnemy%20Fire%20tileset%20Minor%20Changes.tmx
+  imageUrl: ''
+- name: chapter13rescuemission_diff_tileset
+  author: Shin19
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Elibe%20Map%20Alt%20Pack%20%7BShin19%7D%20(16)/Chapter13RescueMission%20Diff%20Tileset.tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Elibe%20Map%20Alt%20Pack%20%7BShin19%7D%20(16)/Chapter13RescueMission%20Diff%20Tileset.png
+- name: chapter14arcadia_slight_rework_item_markings
+  author: Shin19
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Elibe%20Map%20Alt%20Pack%20%7BShin19%7D%20(16)/Chapter14Arcadia%20Slight%20Rework%20Item%20Markings.tmx
+  imageUrl: ''
+- name: chapter18afrozenriver_combo_19a
+  author: Shin19
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Elibe%20Map%20Alt%20Pack%20%7BShin19%7D%20(16)/Chapter18AFrozenRiver%20Combo%2019A.tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Elibe%20Map%20Alt%20Pack%20%7BShin19%7D%20(16)/Chapter18AFrozenRiver%20Combo%2019A.png
+- name: chapter20bthesilverwolf_diff_tileset
+  author: Shin19
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Elibe%20Map%20Alt%20Pack%20%7BShin19%7D%20(16)/Chapter20BTheSilverWolf%20Diff%20Tileset.tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Elibe%20Map%20Alt%20Pack%20%7BShin19%7D%20(16)/Chapter20BTheSilverWolf%20Diff%20Tileset.png
+- name: chapter3_the_latecomer
+  author: Shin19
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Elibe%20Map%20Alt%20Pack%20%7BShin19%7D%20(16)/Chapter3%20The%20Latecomer.tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Elibe%20Map%20Alt%20Pack%20%7BShin19%7D%20(16)/Chapter3%20The%20Latecomer.png
+- name: chapter5flamecrest_diff_tileset
+  author: Shin19
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Elibe%20Map%20Alt%20Pack%20%7BShin19%7D%20(16)/Chapter5FlameCrest%20Diff%20Tileset.tmx
+  imageUrl: ''
+- name: chapter6thetrapissprung_more_carpet
+  author: Shin19
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Elibe%20Map%20Alt%20Pack%20%7BShin19%7D%20(16)/Chapter6TheTrapIsSprung%20More%20Carpet.tmx
+  imageUrl: ''
+- name: chapter7ostiasrebellion_diff_tileset
+  author: Shin19
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Elibe%20Map%20Alt%20Pack%20%7BShin19%7D%20(16)/Chapter7OstiasRebellion%20Diff%20Tileset.tmx
+  imageUrl: ''
+- name: chapter8reunion_jail_route
+  author: Shin19
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Elibe%20Map%20Alt%20Pack%20%7BShin19%7D%20(16)/Chapter8Reunion%20Jail%20Route.tmx
+  imageUrl: ''
+- name: chapter9
+  author: Shin19
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Elibe%20Map%20Alt%20Pack%20%7BShin19%7D%20(16)/Chapter9.tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Elibe%20Map%20Alt%20Pack%20%7BShin19%7D%20(16)/Chapter9.png
+- name: finalchapterbeyonddarkness_tower_combo
+  author: Shin19
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Elibe%20Map%20Alt%20Pack%20%7BShin19%7D%20(16)/FinalChapterBeyondDarkness%20tower%20combo.tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Elibe%20Map%20Alt%20Pack%20%7BShin19%7D%20(16)/FinalChapterBeyondDarkness%20tower%20combo.png
+- name: alusq_fe7_0a009b0c_dark_room-_cutscene_map
+  author: FEU
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Blitz%201%20(FEU)/Alusq_FE7_0A009B0C_dark%20room-%20cutscene%20map.tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Blitz%201%20(FEU)/Alusq_FE7_0A009B0C_dark%20room-%20cutscene%20map.png
+- name: alusq_fe7_1c1d481f_trine_peninsula
+  author: FEU
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Blitz%201%20(FEU)/Alusq_FE7_1C1D481F_trine%20peninsula.tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Blitz%201%20(FEU)/Alusq_FE7_1C1D481F_trine%20peninsula.png
+- name: alusq_fe7_42004344_message_from_the_gods
+  author: FEU
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Blitz%201%20(FEU)/Alusq_FE7_42004344_message%20from%20the%20gods.tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Blitz%201%20(FEU)/Alusq_FE7_42004344_message%20from%20the%20gods.png
+- name: alusq_fe7_7b007c7d_dinosaur_lake
+  author: FEU
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Blitz%201%20(FEU)/Alusq_FE7_7B007C7D_dinosaur%20lake.tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Blitz%201%20(FEU)/Alusq_FE7_7B007C7D_dinosaur%20lake.png
+- name: alusq_fe7_a700a8a9_treasure_fortress
+  author: FEU
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Blitz%201%20(FEU)/Alusq_FE7_A700A8A9_treasure%20fortress.tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Blitz%201%20(FEU)/Alusq_FE7_A700A8A9_treasure%20fortress.png
+- name: alusq_fe8_01000203_span_island_(aw2)
+  author: FEU
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Blitz%201%20(FEU)/Alusq_FE8_01000203_Span%20Island%20(AW2).tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Blitz%201%20(FEU)/Alusq_FE8_01000203_Span%20Island%20(AW2).png
+- name: alusq_fe8_01000203_castle_of_duty-_maison_warfare
+  author: FEU
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Blitz%201%20(FEU)/Alusq_FE8_01000203_castle%20of%20duty-%20maison%20warfare.tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Blitz%201%20(FEU)/Alusq_FE8_01000203_castle%20of%20duty-%20maison%20warfare.png
+- name: >-
+    alusq_fe8_01000203_our_emperor_will_only_surrender_if_you_can_solve_the_hedge_maze
+  author: FEU
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Blitz%201%20(FEU)/Alusq_FE8_01000203_our%20emperor%20will%20only%20surrender%20if%20you%20can%20solve...............%20THE%20HEDGE%20MAZE.tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Blitz%201%20(FEU)/Alusq_FE8_01000203_our%20emperor%20will%20only%20surrender%20if%20you%20can%20solve...............%20THE%20HEDGE%20MAZE.png
+- name: alusq_fe8_01000203_you_deserve_a_vacation
+  author: FEU
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Blitz%201%20(FEU)/Alusq_FE8_01000203_you%20deserve%20a%20vacation.tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Blitz%201%20(FEU)/Alusq_FE8_01000203_you%20deserve%20a%20vacation.png
+- name: alusq_fe8_01003803_lush_woods
+  author: FEU
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Blitz%201%20(FEU)/Alusq_FE8_01003803_lush%20woods.tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Blitz%201%20(FEU)/Alusq_FE8_01003803_lush%20woods.png
+- name: alusq_fe8_01004c03_well_gang_looks_like_we_re_too_late
+  author: FEU
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Blitz%201%20(FEU)/Alusq_FE8_01004C03_well%2C%20gang%2C%20looks%20like%20we're%20too%20late.tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Blitz%201%20(FEU)/Alusq_FE8_01004C03_well%2C%20gang%2C%20looks%20like%20we're%20too%20late.png
+- name: >-
+    alusq_fe8_01005b03_bro_what_did_i_tell_you_about_trying_to_build_castles_in_swamps
+  author: FEU
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Blitz%201%20(FEU)/Alusq_FE8_01005B03_bro%20what%20did%20i%20TELL%20you%20about%20trying%20to%20build%20castles%20in%20swamps.tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Blitz%201%20(FEU)/Alusq_FE8_01005B03_bro%20what%20did%20i%20TELL%20you%20about%20trying%20to%20build%20castles%20in%20swamps.png
+- name: alusq_fe8_0a009b0c_in_the_dark
+  author: FEU
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Blitz%201%20(FEU)/Alusq_FE8_0A009B0C_in%20the%20dark.tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Blitz%201%20(FEU)/Alusq_FE8_0A009B0C_in%20the%20dark.png
+- name: alusq_fe8_0e007210_stop_here_i_need_to_use_the_restroom
+  author: FEU
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Blitz%201%20(FEU)/Alusq_FE8_0E007210_STOP%20HERE%3B%20I%20NEED%20TO%20USE%20THE%20RESTROOM.tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Blitz%201%20(FEU)/Alusq_FE8_0E007210_STOP%20HERE%3B%20I%20NEED%20TO%20USE%20THE%20RESTROOM.png
+- name: alusq_fe8_1800191a_do_not_trust_pillar
+  author: FEU
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Blitz%201%20(FEU)/Alusq_FE8_1800191A_do%20not%20trust%20pillar.tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Blitz%201%20(FEU)/Alusq_FE8_1800191A_do%20not%20trust%20pillar.png
+- name: alusq_fe8_3c00ce3e_afro_comb_fort
+  author: FEU
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Blitz%201%20(FEU)/Alusq_FE8_3C00CE3E_afro%20comb%20fort.tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Blitz%201%20(FEU)/Alusq_FE8_3C00CE3E_afro%20comb%20fort.png
+- name: alusq_fe8_50005152_4d_wizard_s_chess
+  author: FEU
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Blitz%201%20(FEU)/Alusq_FE8_50005152_4D%20wizard's%20chess.tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Blitz%201%20(FEU)/Alusq_FE8_50005152_4D%20wizard's%20chess.png
+- name: blyvern_fe8_3c003d3e_dlitzbicks
+  author: FEU
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Blitz%201%20(FEU)/Blyvern_FE8_3C003D3E_dlitzbicks.tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Blitz%201%20(FEU)/Blyvern_FE8_3C003D3E_dlitzbicks.png
+- name: lordglenn_fe8_1800191a_thecistern
+  author: FEU
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Blitz%201%20(FEU)/LordGlenn_FE8_1800191A_TheCistern.tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Blitz%201%20(FEU)/LordGlenn_FE8_1800191A_TheCistern.png
+- name: snakey1_fe8_01003803_many_castles
+  author: FEU
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Blitz%201%20(FEU)/Snakey1_FE8_01003803_Many%20Castles.tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Blitz%201%20(FEU)/Snakey1_FE8_01003803_Many%20Castles.png
+- name: totes_fe8_0e000f10_port_town
+  author: FEU
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Blitz%201%20(FEU)/Totes_FE8_0E000F10_Port_Town.tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Blitz%201%20(FEU)/Totes_FE8_0E000F10_Port_Town.png
+- name: totes_fe8_2e002f30_village
+  author: FEU
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Blitz%201%20(FEU)/Totes_FE8_2E002F30_Village.tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Blitz%201%20(FEU)/Totes_FE8_2E002F30_Village.png
+- name: ukulele_fe8_8800898a_blitz
+  author: FEU
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Blitz%201%20(FEU)/Ukulele_FE8_8800898A_Blitz.tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Blitz%201%20(FEU)/Ukulele_FE8_8800898A_Blitz.png
+- name: xenithiagen_fe8_1800481a_thracia776chapter24
+  author: FEU
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Blitz%201%20(FEU)/Xenithiagen_FE8_1800481A_Thracia776Chapter24.tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Blitz%201%20(FEU)/Xenithiagen_FE8_1800481A_Thracia776Chapter24.png
+- name: zmr_fe8_01000203_beachruins
+  author: FEU
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Blitz%201%20(FEU)/zmr_fe8_01000203_beachruins.tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Blitz%201%20(FEU)/zmr_fe8_01000203_beachruins.png
+- name: zmr_fe8_01000203_darrmanlakesmini
+  author: FEU
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Blitz%201%20(FEU)/zmr_fe8_01000203_darrmanlakesmini.tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Blitz%201%20(FEU)/zmr_fe8_01000203_darrmanlakesmini.png
+- name: zmr_fe8_01000203_genericprologue
+  author: FEU
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Blitz%201%20(FEU)/zmr_fe8_01000203_genericprologue.tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Blitz%201%20(FEU)/zmr_fe8_01000203_genericprologue.png
+- name: zmr_fe8_0e000f10_coasttown
+  author: FEU
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Blitz%201%20(FEU)/zmr_fe8_0e000f10_coasttown.tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Blitz%201%20(FEU)/zmr_fe8_0e000f10_coasttown.png
+- name: zmr_fe8_1800191a_defendbede
+  author: FEU
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Blitz%201%20(FEU)/zmr_fe8_1800191a_defendbede.tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Blitz%201%20(FEU)/zmr_fe8_1800191a_defendbede.png
+- name: zmr_fe8_1800481a_bluefort
+  author: FEU
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Blitz%201%20(FEU)/zmr_fe8_1800481a_bluefort.tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Blitz%201%20(FEU)/zmr_fe8_1800481a_bluefort.png
+- name: zmr_fe8_3c003d3e_purplefort
+  author: FEU
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Blitz%201%20(FEU)/zmr_fe8_3c003d3e_purplefort.tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Blitz%201%20(FEU)/zmr_fe8_3c003d3e_purplefort.png
+- name: knights_villagers_bandits_1_(01_00_02_03)
+  author: Aura_Wolf
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20Knights%20%7BAura%20Wolf%7D%20(13)/Knights%20Villagers%20Bandits%201%20(01%2000%2002%2003).tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20Knights%20%7BAura%20Wolf%7D%20(13)/Knights%20Villagers%20Bandits%201%20(01%2000%2002%2003).png
+- name: knights_villagers_bandits_10_(3c_00_ce_3e)
+  author: Aura_Wolf
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20Knights%20%7BAura%20Wolf%7D%20(13)/Knights%20Villagers%20Bandits%2010%20(3C%2000%20CE%203E).tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20Knights%20%7BAura%20Wolf%7D%20(13)/Knights%20Villagers%20Bandits%2010%20(3C%2000%20CE%203E).png
+- name: knights_villagers_bandits_11_(0e_00_72_10)
+  author: Aura_Wolf
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20Knights%20%7BAura%20Wolf%7D%20(13)/Knights%20Villagers%20Bandits%2011%20(0E%2000%2072%2010).tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20Knights%20%7BAura%20Wolf%7D%20(13)/Knights%20Villagers%20Bandits%2011%20(0E%2000%2072%2010).png
+- name: knights_villagers_bandits_12_(01_00_02_03)
+  author: Aura_Wolf
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20Knights%20%7BAura%20Wolf%7D%20(13)/Knights%20Villagers%20Bandits%2012%20(01%2000%2002%2003).tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20Knights%20%7BAura%20Wolf%7D%20(13)/Knights%20Villagers%20Bandits%2012%20(01%2000%2002%2003).png
+- name: knights_villagers_bandits_13_(01_00_02_03)
+  author: Aura_Wolf
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20Knights%20%7BAura%20Wolf%7D%20(13)/Knights%20Villagers%20Bandits%2013%20(01%2000%2002%2003).tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20Knights%20%7BAura%20Wolf%7D%20(13)/Knights%20Villagers%20Bandits%2013%20(01%2000%2002%2003).png
+- name: knights_villagers_bandits_2_(01_00_02_03)
+  author: Aura_Wolf
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20Knights%20%7BAura%20Wolf%7D%20(13)/Knights%20Villagers%20Bandits%202%20(01%2000%2002%2003).tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20Knights%20%7BAura%20Wolf%7D%20(13)/Knights%20Villagers%20Bandits%202%20(01%2000%2002%2003).png
+- name: knights_villagers_bandits_3_(0e_00_72_10)
+  author: Aura_Wolf
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20Knights%20%7BAura%20Wolf%7D%20(13)/Knights%20Villagers%20Bandits%203%20(0E%2000%2072%2010).tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20Knights%20%7BAura%20Wolf%7D%20(13)/Knights%20Villagers%20Bandits%203%20(0E%2000%2072%2010).png
+- name: knights_villagers_bandits_4_(01_00_38_03)
+  author: Aura_Wolf
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20Knights%20%7BAura%20Wolf%7D%20(13)/Knights%20Villagers%20Bandits%204%20(01%2000%2038%2003).tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20Knights%20%7BAura%20Wolf%7D%20(13)/Knights%20Villagers%20Bandits%204%20(01%2000%2038%2003).png
+- name: knights_villagers_bandits_5_(01_00_38_03)
+  author: Aura_Wolf
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20Knights%20%7BAura%20Wolf%7D%20(13)/Knights%20Villagers%20Bandits%205%20(01%2000%2038%2003).tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20Knights%20%7BAura%20Wolf%7D%20(13)/Knights%20Villagers%20Bandits%205%20(01%2000%2038%2003).png
+- name: knights_villagers_bandits_6_(0e_00_72_10)
+  author: Aura_Wolf
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20Knights%20%7BAura%20Wolf%7D%20(13)/Knights%20Villagers%20Bandits%206%20(0E%2000%2072%2010).tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20Knights%20%7BAura%20Wolf%7D%20(13)/Knights%20Villagers%20Bandits%206%20(0E%2000%2072%2010).png
+- name: knights_villagers_bandits_7_(18_00_48_1a)
+  author: Aura_Wolf
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20Knights%20%7BAura%20Wolf%7D%20(13)/Knights%20Villagers%20Bandits%207%20(18%2000%2048%201A).tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20Knights%20%7BAura%20Wolf%7D%20(13)/Knights%20Villagers%20Bandits%207%20(18%2000%2048%201A).png
+- name: knights_villagers_bandits_8_(18_00_19_1a)
+  author: Aura_Wolf
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20Knights%20%7BAura%20Wolf%7D%20(13)/Knights%20Villagers%20Bandits%208%20(18%2000%2019%201A).tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20Knights%20%7BAura%20Wolf%7D%20(13)/Knights%20Villagers%20Bandits%208%20(18%2000%2019%201A).png
+- name: knights_villagers_bandits_9_(18_00_48_1a)
+  author: Aura_Wolf
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20Knights%20%7BAura%20Wolf%7D%20(13)/Knights%20Villagers%20Bandits%209%20(18%2000%2048%201A).tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20Knights%20%7BAura%20Wolf%7D%20(13)/Knights%20Villagers%20Bandits%209%20(18%2000%2048%201A).png
+- name: mages_mercenaries_1_(0e_00_72_10)
+  author: Aura_Wolf
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20Mages%20%7BAura%20Wolf%7D%20(4)/Mages%20Mercenaries%201%20(0E%2000%2072%2010).tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20Mages%20%7BAura%20Wolf%7D%20(4)/Mages%20Mercenaries%201%20(0E%2000%2072%2010).png
+- name: mages_mercenaries_2_(01_00_38_03)
+  author: Aura_Wolf
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20Mages%20%7BAura%20Wolf%7D%20(4)/Mages%20Mercenaries%202%20(01%2000%2038%2003).tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20Mages%20%7BAura%20Wolf%7D%20(4)/Mages%20Mercenaries%202%20(01%2000%2038%2003).png
+- name: mages_mercenaries_3_(42_00_43_44)
+  author: Aura_Wolf
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20Mages%20%7BAura%20Wolf%7D%20(4)/Mages%20Mercenaries%203%20(42%2000%2043%2044).tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20Mages%20%7BAura%20Wolf%7D%20(4)/Mages%20Mercenaries%203%20(42%2000%2043%2044).png
+- name: mages_mercenaries_4_(01_00_02_03)
+  author: Aura_Wolf
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20Mages%20%7BAura%20Wolf%7D%20(4)/Mages%20Mercenaries%204%20(01%2000%2002%2003).tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20Mages%20%7BAura%20Wolf%7D%20(4)/Mages%20Mercenaries%204%20(01%2000%2002%2003).png
+- name: nobles_evil_doers_1_(18_00_19_1a)
+  author: Aura_Wolf
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20Nobles%20%7BAura%20Wolf%7D%20(11)/Nobles%20Evil%20Doers%201%20(18%2000%2019%201A).tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20Nobles%20%7BAura%20Wolf%7D%20(11)/Nobles%20Evil%20Doers%201%20(18%2000%2019%201A).png
+- name: nobles_evil_doers_10_(88_00_89_8a)
+  author: Aura_Wolf
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20Nobles%20%7BAura%20Wolf%7D%20(11)/Nobles%20Evil%20Doers%2010%20(88%2000%2089%208A).tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20Nobles%20%7BAura%20Wolf%7D%20(11)/Nobles%20Evil%20Doers%2010%20(88%2000%2089%208A).png
+- name: nobles_evil_doers_11_(3c_00_68_3e)
+  author: Aura_Wolf
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20Nobles%20%7BAura%20Wolf%7D%20(11)/Nobles%20Evil%20Doers%2011%20(3C%2000%2068%203E).tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20Nobles%20%7BAura%20Wolf%7D%20(11)/Nobles%20Evil%20Doers%2011%20(3C%2000%2068%203E).png
+- name: nobles_evil_doers_2_(01_00_4c_03)
+  author: Aura_Wolf
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20Nobles%20%7BAura%20Wolf%7D%20(11)/Nobles%20Evil%20Doers%202%20(01%2000%204C%2003).tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20Nobles%20%7BAura%20Wolf%7D%20(11)/Nobles%20Evil%20Doers%202%20(01%2000%204C%2003).png
+- name: nobles_evil_doers_3_(01_00_02_03)
+  author: Aura_Wolf
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20Nobles%20%7BAura%20Wolf%7D%20(11)/Nobles%20Evil%20Doers%203%20(01%2000%2002%2003).tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20Nobles%20%7BAura%20Wolf%7D%20(11)/Nobles%20Evil%20Doers%203%20(01%2000%2002%2003).png
+- name: nobles_evil_doers_4_(6c_00_a3_6e)
+  author: Aura_Wolf
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20Nobles%20%7BAura%20Wolf%7D%20(11)/Nobles%20Evil%20Doers%204%20(6C%2000%20A3%206E).tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20Nobles%20%7BAura%20Wolf%7D%20(11)/Nobles%20Evil%20Doers%204%20(6C%2000%20A3%206E).png
+- name: nobles_evil_doers_5_(6c_00_a3_6e)
+  author: Aura_Wolf
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20Nobles%20%7BAura%20Wolf%7D%20(11)/Nobles%20Evil%20Doers%205%20(6C%2000%20A3%206E).tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20Nobles%20%7BAura%20Wolf%7D%20(11)/Nobles%20Evil%20Doers%205%20(6C%2000%20A3%206E).png
+- name: nobles_evil_doers_6_(6c_00_a3_6e)
+  author: Aura_Wolf
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20Nobles%20%7BAura%20Wolf%7D%20(11)/Nobles%20Evil%20Doers%206%20(6C%2000%20A3%206E).tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20Nobles%20%7BAura%20Wolf%7D%20(11)/Nobles%20Evil%20Doers%206%20(6C%2000%20A3%206E).png
+- name: nobles_evil_doers_7_(6c_00_a3_6e)
+  author: Aura_Wolf
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20Nobles%20%7BAura%20Wolf%7D%20(11)/Nobles%20Evil%20Doers%207%20(6C%2000%20A3%206E).tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20Nobles%20%7BAura%20Wolf%7D%20(11)/Nobles%20Evil%20Doers%207%20(6C%2000%20A3%206E).png
+- name: nobles_evil_doers_8_(6c_00_a3_6e)
+  author: Aura_Wolf
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20Nobles%20%7BAura%20Wolf%7D%20(11)/Nobles%20Evil%20Doers%208%20(6C%2000%20A3%206E).tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20Nobles%20%7BAura%20Wolf%7D%20(11)/Nobles%20Evil%20Doers%208%20(6C%2000%20A3%206E).png
+- name: nobles_evil_doers_9_(5f_00_60_61)
+  author: Aura_Wolf
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20Nobles%20%7BAura%20Wolf%7D%20(11)/Nobles%20Evil%20Doers%209%20(5F%2000%2060%2061).tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20Nobles%20%7BAura%20Wolf%7D%20(11)/Nobles%20Evil%20Doers%209%20(5F%2000%2060%2061).png
+- name: despair_and_hope_edit
+  author: ZoramineFae
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20%7BZoramineFae%7D%20(9)/Despair%20and%20Hope%20Edit.tmx
+  imageUrl: ''
+- name: doors_to_destiny_part_1
+  author: ZoramineFae
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20%7BZoramineFae%7D%20(9)/Doors%20to%20Destiny%20Part%201.tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20%7BZoramineFae%7D%20(9)/Doors%20to%20Destiny%20Part%201.png
+- name: doors_to_destiny_part_2
+  author: ZoramineFae
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20%7BZoramineFae%7D%20(9)/Doors%20to%20Destiny%20Part%202.tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20%7BZoramineFae%7D%20(9)/Doors%20to%20Destiny%20Part%202.png
+- name: fort_dragonfall
+  author: ZoramineFae
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20%7BZoramineFae%7D%20(9)/Fort%20Dragonfall.tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20%7BZoramineFae%7D%20(9)/Fort%20Dragonfall.png
+- name: layered_village
+  author: ZoramineFae
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20%7BZoramineFae%7D%20(9)/Layered%20Village.tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20%7BZoramineFae%7D%20(9)/Layered%20Village.png
+- name: mountain_border_gate_part_7
+  author: ZoramineFae
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20%7BZoramineFae%7D%20(9)/Mountain%20Border%20Gate%20Part%207.tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20%7BZoramineFae%7D%20(9)/Mountain%20Border%20Gate%20Part%207.png
+- name: special_desert
+  author: ZoramineFae
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20%7BZoramineFae%7D%20(9)/Special%20Desert.tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20%7BZoramineFae%7D%20(9)/Special%20Desert.png
+- name: special_map
+  author: ZoramineFae
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20%7BZoramineFae%7D%20(9)/Special%20Map.tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20%7BZoramineFae%7D%20(9)/Special%20Map.png
+- name: unhappy_reunion
+  author: ZoramineFae
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20%7BZoramineFae%7D%20(9)/Unhappy%20Reunion.tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Map%20Pack%20%7BZoramineFae%7D%20(9)/Unhappy%20Reunion.png
+- name: castle_village
+  author: ZoramineFae
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Mapping%20Bucket%20%7BZoramineFae%7D/Castle%20Village.tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Mapping%20Bucket%20%7BZoramineFae%7D/Castle%20Village.png
+- name: cliff_crossing
+  author: ZoramineFae
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Mapping%20Bucket%20%7BZoramineFae%7D/Cliff%20Crossing.tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Mapping%20Bucket%20%7BZoramineFae%7D/Cliff%20Crossing.png
+- name: dense_forests
+  author: ZoramineFae
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Mapping%20Bucket%20%7BZoramineFae%7D/Dense%20Forests.tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Mapping%20Bucket%20%7BZoramineFae%7D/Dense%20Forests.png
+- name: freeroam
+  author: ZoramineFae
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Mapping%20Bucket%20%7BZoramineFae%7D/Freeroam.tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Mapping%20Bucket%20%7BZoramineFae%7D/Freeroam.png
+- name: grand_falls
+  author: ZoramineFae
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Mapping%20Bucket%20%7BZoramineFae%7D/Grand%20Falls.tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Mapping%20Bucket%20%7BZoramineFae%7D/Grand%20Falls.png
+- name: hills_practice
+  author: ZoramineFae
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Mapping%20Bucket%20%7BZoramineFae%7D/Hills%20Practice.tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Mapping%20Bucket%20%7BZoramineFae%7D/Hills%20Practice.png
+- name: jungle_exploration
+  author: ZoramineFae
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Mapping%20Bucket%20%7BZoramineFae%7D/Jungle%20Exploration.tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Mapping%20Bucket%20%7BZoramineFae%7D/Jungle%20Exploration.png
+- name: most_recent
+  author: ZoramineFae
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Mapping%20Bucket%20%7BZoramineFae%7D/Most%20Recent.tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Mapping%20Bucket%20%7BZoramineFae%7D/Most%20Recent.png
+- name: mountain_practice
+  author: ZoramineFae
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Mapping%20Bucket%20%7BZoramineFae%7D/Mountain%20Practice.tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Mapping%20Bucket%20%7BZoramineFae%7D/Mountain%20Practice.png
+- name: old_man_jenkins_farm
+  author: ZoramineFae
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Mapping%20Bucket%20%7BZoramineFae%7D/Old%20Man%20Jenkins'%20Farm.tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Mapping%20Bucket%20%7BZoramineFae%7D/Old%20Man%20Jenkins'%20Farm.png
+- name: port_penninsula
+  author: ZoramineFae
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Mapping%20Bucket%20%7BZoramineFae%7D/Port%20Penninsula.tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Mapping%20Bucket%20%7BZoramineFae%7D/Port%20Penninsula.png
+- name: port_village
+  author: ZoramineFae
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Mapping%20Bucket%20%7BZoramineFae%7D/Port%20Village.tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Mapping%20Bucket%20%7BZoramineFae%7D/Port%20Village.png
+- name: sewers
+  author: ZoramineFae
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Mapping%20Bucket%20%7BZoramineFae%7D/Sewers.tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/Mapping%20Bucket%20%7BZoramineFae%7D/Sewers.png
+- name: the_cistern_waterless_{lordglenn}
+  author: LordGlenn
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/The%20Cistern%20%7BLordGlenn%7D%20(2)/The%20Cistern%20Waterless%20%7BLordGlenn%7D.tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/The%20Cistern%20%7BLordGlenn%7D%20(2)/The%20Cistern%20Waterless%20%7BLordGlenn%7D.png
+- name: the_cistern_{lordglenn}
+  author: LordGlenn
+  tmxUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/The%20Cistern%20%7BLordGlenn%7D%20(2)/The%20Cistern%20%7BLordGlenn%7D.tmx
+  imageUrl: >-
+    https://raw.githubusercontent.com/Klokinator/FE-Repo/main/Maps/The%20Cistern%20%7BLordGlenn%7D%20(2)/The%20Cistern%20%7BLordGlenn%7D.png
