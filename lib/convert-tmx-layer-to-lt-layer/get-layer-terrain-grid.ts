@@ -22,7 +22,11 @@ export default function getLayerTerrainGrid({
 
   for (let i = 0; i < singleLayerNames.length; i++) {
     const name = singleLayerNames[i];
-    const terrainNid = getTerrainLTNid(name) ?? "--";
+    let terrainNid = getTerrainLTNid(name);
+    if (!terrainNid) {
+      console.warn(`Unknown terrain name: ${name}`);
+      terrainNid = "--";
+    }
     const x = i % mapWidth;
     const y = Math.floor(i / mapWidth);
     if (terrainNid === "0") {
