@@ -64,6 +64,11 @@ export default async function importMaps(): Promise<void> {
   for (const dirEntry of rootItems) {
     if (dirEntry.type === "dir" && dirEntry.name !== "Partials & Unformatted") {
       const author = parseAuthor(dirEntry.name);
+
+      if (author === "ZoramineFae") {
+        // skip
+        continue;
+      }
       const subDirUrl = `https://api.github.com/repos/Klokinator/FE-Repo/contents/Maps/${encodeURIComponent(dirEntry.name)}?per_page=1000`;
       const subDirItems = await getGithubDirContents(subDirUrl);
 
