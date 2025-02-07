@@ -29,6 +29,25 @@ export type MapRecord = {
   imageUrl: string;
 };
 
+/** Attempt to find a .png baseName that aligns with tmxBaseName, removing trailing words if needed. */
+function fuzzyMatchPngBaseName(tmxBaseName: string, pngBaseNameSet: Set<string>): string | undefined {
+  // Direct match
+  if (pngBaseNameSet.has(tmxBaseName)) {
+    return tmxBaseName;
+  }
+
+  // If no direct match, remove trailing words from tmxBaseName until we find a match or run out
+  const words = tmxBaseName.split(/\s+/);
+  while (words.length > 1) {
+    words.pop(); // remove last word
+    const attempt = words.join(" ");
+    if (pngBaseNameSet.has(attempt)) {
+      return attempt;
+    }
+  }
+  return undefined;
+}
+
 async function getGithubDirContents(url: string): Promise<any[]> {
   const resp = await fetch(url);
   if (!resp.ok) {
@@ -38,68 +57,72 @@ async function getGithubDirContents(url: string): Promise<any[]> {
 }
 
 export default async function importMaps(): Promise<void> {
-  // We'll store our final results here
   const results: MapRecord[] = [];
-
-  // 1. Fetch the top-level 'Maps' directory from the GitHub repo
   const mainUrl = "https://api.github.com/repos/Klokinator/FE-Repo/contents/Maps?per_page=1000";
   const rootItems = await getGithubDirContents(mainUrl);
 
-  // 2. For each directory in root, skip "Partials & Unformatted", then parse its contents
   for (const dirEntry of rootItems) {
     if (dirEntry.type === "dir" && dirEntry.name !== "Partials & Unformatted") {
-      // The folder name might be "Anrika {Allin}" or "Someone (Alias)" or no braces at all
       const author = parseAuthor(dirEntry.name);
-
-      // Now fetch the contents of this subdirectory
       const subDirUrl = `https://api.github.com/repos/Klokinator/FE-Repo/contents/Maps/${encodeURIComponent(dirEntry.name)}?per_page=1000`;
       const subDirItems = await getGithubDirContents(subDirUrl);
 
-      // Create a lookup from base map name -> { tmxUrl, imageUrl }
-      // We'll pair them by matching prefix of the file name before .tmx/.png
-      const mapLookup: Record<string, { tmxUrl?: string; pngUrl?: string }> = {};
+      // We'll collect all tmx files, then see if there's a matching png
+      const tmxRecords: Array<{ base: string; url: string }> = [];
+      const pngRecords: Array<{ base: string; url: string }> = [];
 
       for (const fileEntry of subDirItems) {
-        if (fileEntry.type === "file") {
-          // Example filename: "Some Map.tmx" or "Some Map.png"
+        if (fileEntry.type === "file" && fileEntry.download_url) {
           const { name: filename, download_url: fileUrl } = fileEntry;
-          if (filename.toLowerCase().endsWith(".tmx")) {
-            const baseName = filename.substring(0, filename.length - 4).toLowerCase();
-            if (!mapLookup[baseName]) {
-              mapLookup[baseName] = {};
-            }
-            mapLookup[baseName].tmxUrl = fileUrl;
-          } else if (filename.toLowerCase().endsWith(".png")) {
-            const baseName = filename.substring(0, filename.length - 4).toLowerCase();
-            if (!mapLookup[baseName]) {
-              mapLookup[baseName] = {};
-            }
-            mapLookup[baseName].pngUrl = fileUrl;
+          const lowerName = filename.toLowerCase();
+
+          if (lowerName.endsWith(".tmx")) {
+            // keep track of the raw base name (without .tmx)
+            const baseName = filename.slice(0, -4); // remove .tmx
+            tmxRecords.push({ base: baseName, url: fileUrl });
+          } else if (lowerName.endsWith(".png")) {
+            const baseName = filename.slice(0, -4);
+            pngRecords.push({ base: baseName, url: fileUrl });
           }
         }
       }
 
-      // 3. For each map entry in the lookup, push a record into results if .tmx exists
-      // (PNG may or may not exist, but we include it if found)
-      for (const baseName in mapLookup) {
-        const record = mapLookup[baseName];
-        if (record.tmxUrl) {
-          const safeMapName = sanitizeString(baseName);
-          results.push({
-            name: safeMapName,
-            author,
-            tmxUrl: record.tmxUrl,
-            imageUrl: record.pngUrl || "",
-          });
+      // Build quick set for all .png base names in this subdir
+      // We'll remove them from the set as we match them
+      const pngBaseNameSet = new Set(pngRecords.map((p) => p.base));
+
+      for (const tmx of tmxRecords) {
+        const tmxLc = tmx.base.toLowerCase();
+        let matchedPngUrl = "";
+        // First see if there's an exact match ignoring case
+        // Then do the fuzzy approach
+        let foundPngRecord = pngRecords.find((png) => png.base.toLowerCase() === tmxLc);
+        if (!foundPngRecord) {
+          // Attempt fuzzy matching
+          const matched = fuzzyMatchPngBaseName(tmx.base, pngBaseNameSet);
+          if (matched) {
+            foundPngRecord = pngRecords.find((p) => p.base === matched);
+          }
         }
+        if (foundPngRecord) {
+          matchedPngUrl = foundPngRecord.url;
+          // remove from set so we don't re-match it
+          pngBaseNameSet.delete(foundPngRecord.base);
+        }
+
+        // push final record
+        const safeName = sanitizeString(tmx.base);
+        results.push({
+          name: safeName,
+          author,
+          tmxUrl: tmx.url,
+          imageUrl: matchedPngUrl,
+        });
       }
     }
   }
 
-  // 4. Convert results to YAML
   const yamlString = YAML.dump(results);
-
-  // 5. Write to a local file for subsequent processing
   await Deno.writeTextFile("import-maps/maps.yaml", yamlString);
   console.log(`Wrote ${results.length} map records to import-maps/maps.yaml`);
 }

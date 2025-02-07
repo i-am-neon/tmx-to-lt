@@ -19,7 +19,9 @@ export default async function downloadMaps(): Promise<void> {
   try {
     yamlContent = await Deno.readTextFile("import-maps/maps.yaml");
   } catch (err) {
-    throw new Error("Failed to read 'import-maps/maps.yaml'. Make sure you've run import-maps first.");
+    throw new Error(
+      "Failed to read 'import-maps/maps.yaml'. Make sure you've run import-maps first."
+    );
   }
 
   const maps = YAML.load(yamlContent) as MapRecord[];
@@ -29,7 +31,7 @@ export default async function downloadMaps(): Promise<void> {
 
   for (const mapRecord of maps) {
     // Build a sanitized filename
-    const combinedName = `${mapRecord.name}__by${mapRecord.author}`;
+    const combinedName = `${mapRecord.name}__by_${mapRecord.author}`;
     const tmxFilePath = `input/${combinedName}.tmx`;
     const pngFilePath = `input/${combinedName}.png`;
 
@@ -37,23 +39,30 @@ export default async function downloadMaps(): Promise<void> {
     if (mapRecord.tmxUrl) {
       const resp = await fetch(mapRecord.tmxUrl);
       if (!resp.ok) {
-        console.warn(`Failed to download TMX for ${combinedName}: ${resp.statusText}`);
+        console.warn(
+          `Failed to download TMX for ${combinedName}: ${resp.statusText}`
+        );
       } else {
         const tmxData = await resp.arrayBuffer();
         await Deno.writeFile(tmxFilePath, new Uint8Array(tmxData));
         console.log(`Wrote TMX -> ${tmxFilePath}`);
       }
-    }
+      const imagesDir = "input/images";
+      await Deno.mkdir(imagesDir, { recursive: true });
+      const pngFilePath = `${imagesDir}/${combinedName}.png`;
 
-    // Download the PNG (if it exists)
-    if (mapRecord.imageUrl) {
-      const resp = await fetch(mapRecord.imageUrl);
-      if (!resp.ok) {
-        console.warn(`Failed to download PNG for ${combinedName}: ${resp.statusText}`);
-      } else {
-        const pngData = await resp.arrayBuffer();
-        await Deno.writeFile(pngFilePath, new Uint8Array(pngData));
-        console.log(`Wrote PNG -> ${pngFilePath}`);
+      // Download the PNG (if it exists)
+      if (mapRecord.imageUrl) {
+        const resp = await fetch(mapRecord.imageUrl);
+        if (!resp.ok) {
+          console.warn(
+            `Failed to download PNG for ${combinedName}: ${resp.statusText}`
+          );
+        } else {
+          const pngData = await resp.arrayBuffer();
+          await Deno.writeFile(pngFilePath, new Uint8Array(pngData));
+          console.log(`Wrote PNG -> ${pngFilePath}`);
+        }
       }
     }
   }
@@ -62,3 +71,4 @@ export default async function downloadMaps(): Promise<void> {
 if (import.meta.main) {
   downloadMaps();
 }
+

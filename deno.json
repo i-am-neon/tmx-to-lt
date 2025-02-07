@@ -1,6 +1,7 @@
 {
   "tasks": {
-    "convert": "deno run --allow-all main.ts"
+    "convert": "deno run --allow-all main.ts",
+    "clean": "deno run --allow-all clean.ts"
   },
   "imports": {
     "@std/assert": "jsr:@std/assert@1",
@@ -11,4 +12,3 @@
     "yaml": "npm:yaml@^2.7.0"
   }
 }
-
