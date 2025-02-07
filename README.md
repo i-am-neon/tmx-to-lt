@@ -49,6 +49,10 @@ This means the following maps will not convert:
 - "Chapter14Arcadia_Slight_Rework_Item_Markings" by Shin19
 - "The_Cistern_Waterless_{LordGlenn}" by LordGlenn
 
+## Adding These maps to your LT game
+
+Move the generated `.json` and corresponding image file from the `/output/` directory to your LT game's `/maps/` directory.
+
 ## Developer Setup
 
 For detailed setup and usage instructions, see [developer-setup.md](developer-setup.md).
