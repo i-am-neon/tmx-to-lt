@@ -17,13 +17,14 @@ export default function convertTmxToLT(tmxFilePath: string): Tilemap | null {
   // LT expects the first layer to be called "base"
   tmxData.layers[0].name = "base";
 
-  const layers = tmxData.layers.map((layer) =>
+  const layers = tmxData.layers.map((layer, index) =>
     convertTmxLayerToLtLayer({
       firstGid: tmxData.firstGid,
       layer,
       mapWidth: tmxData.width,
       tileset: tmxData.tileset,
       tilesetId: tmxData.tilesetId,
+      isBaseLayer: index === 0,
     })
   );
 
@@ -46,7 +47,9 @@ export default function convertTmxToLT(tmxFilePath: string): Tilemap | null {
 }
 
 if (import.meta.main) {
-  const res = convertTmxToLT("examples/map/castle.tmx");
+  const res = convertTmxToLT(
+    "examples/(7)Ch3BandofMercenaries_Diff_Tileset__by_Shin19.tmx"
+  );
   console.log("res", JSON.stringify(res, null, 2));
 }
 

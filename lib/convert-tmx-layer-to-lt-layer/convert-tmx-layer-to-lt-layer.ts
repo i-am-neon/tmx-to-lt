@@ -11,12 +11,14 @@ export default function convertTmxLayerToLtLayer({
   tilesetId,
   mapWidth,
   firstGid,
+  isBaseLayer,
 }: {
   layer: Layer;
   tileset: string;
   tilesetId: string;
   mapWidth: number;
   firstGid: number;
+  isBaseLayer: boolean;
 }): LTTilemapLayer {
   const spriteGrid = getLayerSpriteGrid({
     gids: layer.gids,
@@ -29,6 +31,7 @@ export default function convertTmxLayerToLtLayer({
     layer,
     firstGid,
     mapWidth,
+    isBaseLayer,
   });
   return {
     nid: sanitizeNid(layer.name),
@@ -41,7 +44,9 @@ export default function convertTmxLayerToLtLayer({
 
 if (import.meta.main) {
   const exampleXml = new TextDecoder().decode(
-    Deno.readFileSync("examples/map/field.tmx")
+    Deno.readFileSync(
+      "examples/(7)Ch3BandofMercenaries_Diff_Tileset__by_Shin19.tmx"
+    )
   );
   const parsedTmxData = parseTmxXml(exampleXml);
   const converted = convertTmxLayerToLtLayer({
@@ -50,6 +55,7 @@ if (import.meta.main) {
     tilesetId: parsedTmxData.tilesetId,
     mapWidth: parsedTmxData.width,
     firstGid: parsedTmxData.firstGid,
+    isBaseLayer: true,
   });
   console.log("Converted LT Layer:", converted);
 }
